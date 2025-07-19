@@ -46,7 +46,7 @@ h3{
     border: none;
 }
 .b-cover{
-    height: 610px;
+    height: 650px;
     width: 35%;
     background-image: url(NBS.jpg);
     background-size: cover;
@@ -188,7 +188,7 @@ h3{
     display: flex;
     width: 100%;
     margin-top: 2rem;
-    margin-left: 2rem;
+    margin-left: 0;
     }
     .b-tittle{
         margin-top: 1rem;
