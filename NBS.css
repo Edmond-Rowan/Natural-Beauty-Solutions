@@ -32,25 +32,56 @@ h3{
 
 }
 .button{
-    background-color: #3bbec3;
     margin-top: 5rem;
-   height: 5rem;
-   width: 30rem;
-   font-size: xx-large;
+   height: 4rem;
+   width: 15rem;
+   font-size: large;
    font-weight: bold;
-   border-radius: 2rem;
+   border: 3px solid #33a2a6;
+   border-radius: 2px;
+   box-shadow: 0 2px 10px #333333;
+   color: #33a2a6;
+   text-decoration: none;
+   transition: 0.3s ease all;
+   z-index: 1;
+   position: relative;
    cursor: pointer;
 }
-.button:hover{
-    background: #33a2a6;
-    border: none;
+.button::before{
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: '';
+    background-color: #33a2a6;
+    z-index: -1;
+}
+.button:hover, .button:focus{
+    color: #333333;
+}
+.button:hover::before, .button:focus::before{
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+}   
+.button:active{
+    transform: scale(0.9);
 }
 .b-cover{
-    height: 650px;
-    width: 35%;
+    height: 500px;
+    width: 30%;
     background-image: url(NBS.jpg);
     background-size: cover;
-    margin-left: 5rem;
+    margin-top: 2rem;
+    margin-left: 10rem;
+}
+.b-cover:hover{
+    box-shadow: 5px 0px 20px #333333;
+    cursor: grab;
 }
 .sub-1{
     margin-top: 2rem;
@@ -84,7 +115,7 @@ h3{
     margin-left: 15rem;
     margin-top: 5rem;
     margin-bottom: 7rem;
-    height: 25rem;
+    height: 30rem;
     background-image: url(NBS\ G.png);
     background-size: cover;
     width: 55%;
@@ -105,6 +136,7 @@ h3{
 .about-txt{
     margin-left: 5rem;
     margin-top: 5rem;
+    margin-bottom: 5rem;
     animation: appear-1 linear;
     animation-timeline: view();
     animation-range: entry 0 cover 40%;
@@ -169,7 +201,6 @@ h3{
     background: none;
     font-size: large;
     font-weight: lighter;
-    margin-bottom: 3rem ;
 }
 .block-1{
     animation: appear-1 linear;
@@ -266,6 +297,9 @@ h3{
     font-size: large;
     font-weight: lighter;
 }
+#tag-head{
+    font-size: xx-large;
+}
 .tag-img{
     width: 60%;
     margin-left: 2rem;
@@ -294,5 +328,8 @@ h3{
 }
 .footer{
     background: none;
+}
+.Copy{
+    font-size: medium;
 }
 }
