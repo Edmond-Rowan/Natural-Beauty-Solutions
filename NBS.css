@@ -216,6 +216,7 @@ h3{
     } 
     .hh2{
         font-size: small;
+        margin-top: 1.25rem;
     }
   .main{
     display: flex;
@@ -254,10 +255,10 @@ h3{
     margin-left: 2rem;
     margin-top: 2rem;
     margin-bottom: 5rem;
-    height: 15rem;
+    height: 10rem;
     background-image: url(NBS\ G.png);
     background-size: cover;
-    width: 75%;
+    width: 65%;
     background-color: #fff;
     }
     .about-txt{
